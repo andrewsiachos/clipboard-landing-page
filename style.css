@@ -1,0 +1,307 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+
+p {
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+}
+
+.button-container {
+  margin-top: 30px;
+}
+.button-container button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 60px;
+  color: white;
+}
+.button-container button:hover {
+  opacity: 0.8;
+}
+.button-container .ios-button {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0px 3px 5px hsl(171, 66%, 44%);
+}
+.button-container .android-button {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0px 3px 5px hsl(233, 100%, 69%);
+}
+
+header {
+  background-image: url("images/bg-header-desktop.png");
+  background-size: 100% 275px;
+  background-repeat: no-repeat;
+}
+header section {
+  padding-top: 130px;
+  text-align: center;
+}
+header section #logo {
+  margin: auto;
+}
+header section h1 {
+  margin-top: 45px;
+}
+header section p {
+  width: 43%;
+  margin: 20px auto 0 auto;
+}
+
+main #legend {
+  margin-top: 100px;
+  text-align: center;
+}
+main #legend p {
+  width: 46%;
+  margin: 20px auto;
+}
+main #computer-properties {
+  display: flex;
+}
+main #computer-properties #computerContainer {
+  width: 55%;
+}
+main #computer-properties #computerContainer img {
+  width: 100%;
+  margin-left: -100px;
+}
+main #computer-properties #traits {
+  width: 45%;
+  margin-top: 5%;
+}
+main #computer-properties #traits .trait-item {
+  margin-top: 20px;
+}
+main #computer-properties #traits .trait-item p {
+  width: 56%;
+  text-align: left;
+  margin-top: 8px;
+}
+main #clipboard {
+  margin-top: 100px;
+  text-align: center;
+}
+main #clipboard p {
+  width: 48%;
+  margin: 30px auto 0 auto;
+}
+main #clipboard img {
+  width: 50%;
+  margin: 70px auto 0px auto;
+}
+main #workflow {
+  text-align: center;
+  margin-top: 100px;
+}
+main #workflow #workflow-list {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main #workflow #workflow-list .list-item {
+  width: 30%;
+}
+main #workflow #workflow-list .list-item img {
+  margin: 0px auto 15px auto;
+}
+main #workflow #workflow-list .list-item p {
+  width: 86%;
+  margin: 10px auto 0px auto;
+}
+main #partners {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main #clipboardForAll {
+  margin-top: 100px;
+  text-align: center;
+}
+main #clipboardForAll p {
+  width: 47%;
+  margin: 20px auto 0px auto;
+}
+
+footer {
+  background-color: hsl(0, 0%, 91%);
+  margin-top: 150px;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+}
+footer #footer-logo {
+  width: 55px;
+  height: 55px;
+  margin-left: 150px;
+}
+footer #footer-logo img {
+  width: 100%;
+}
+footer #footer-links {
+  width: 50%;
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-row-gap: 15px;
+}
+footer #footer-links a, footer #footer-links a:visited {
+  text-decoration: none;
+}
+footer #footer-links a {
+  display: block;
+  color: rgb(88, 88, 88);
+}
+footer #footer-links a:hover {
+  color: hsl(171, 66%, 44%);
+}
+footer #socialmedia {
+  display: flex;
+  align-items: center;
+  margin-left: 120px;
+}
+footer #socialmedia img {
+  margin-right: 20px;
+  cursor: pointer;
+}
+footer #socialmedia img:hover {
+  fill: hsl(171, 66%, 44%);
+}
+
+@media (max-width: 768px) {
+  .button-container button {
+    display: block;
+    width: 90%;
+    margin: 15px auto 0px auto;
+  }
+  header {
+    background-image: url("images/bg-header-mobile.png");
+  }
+  header section h1 {
+    font-size: 35px;
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header section p {
+    width: 71%;
+  }
+  main #legend h2 {
+    width: 61%;
+    margin: auto;
+  }
+  main #legend p {
+    width: 67%;
+  }
+  main #computer-properties {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  main #computer-properties #computerContainer {
+    width: 90%;
+    margin: auto;
+  }
+  main #computer-properties #computerContainer img {
+    margin: 0;
+  }
+  main #computer-properties #traits {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main #computer-properties #traits .trait-item {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  main #computer-properties #traits .trait-item p {
+    width: 76%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main #clipboard {
+    margin-top: 100px;
+    text-align: center;
+  }
+  main #clipboard h2 {
+    width: 70%;
+    margin: auto;
+  }
+  main #clipboard p {
+    width: 70%;
+  }
+  main #clipboard img {
+    width: 90%;
+  }
+  main #workflow h2, main #workflow p {
+    width: 70%;
+    margin: auto;
+  }
+  main #workflow #workflow-list {
+    flex-direction: column;
+  }
+  main #workflow #workflow-list .list-item {
+    width: 90%;
+    margin-top: 20px;
+  }
+  main #workflow #workflow-list .list-item p {
+    width: 82%;
+    margin-top: 25px;
+  }
+  main #partners {
+    margin-top: 60px;
+    flex-direction: column;
+  }
+  main #partners img {
+    margin-top: 50px;
+  }
+  main #clipboardForAll h2 {
+    width: 67%;
+    margin: auto;
+  }
+  main #clipboardForAll p {
+    width: 71%;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer #footer-logo {
+    margin: auto;
+  }
+  footer #footer-links {
+    width: 90%;
+    margin: 20px auto 0px auto;
+    grid-template-columns: 100%;
+    grid-row-gap: 15px;
+  }
+  footer #footer-links a {
+    text-align: center;
+  }
+  footer #socialmedia {
+    width: 90%;
+    justify-content: center;
+    margin: 50px auto 0px auto;
+  }
+  footer #socialmedia img:last-child {
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
